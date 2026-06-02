@@ -4,10 +4,10 @@ module.exports = {
     type: "Console",
     options: { colors: true, moduleColors: true }
   },
-  transporter: "TCP",       // use "NATS" in multi-machine setups
+  transporter: "TCP",
   cacher: {
     type: "Memory",
-    options: { ttl: 30 }    // cache responses for 30 seconds
+    options: { ttl: 30 }
   },
   serializer: "JSON",
   requestTimeout: 10 * 1000,
