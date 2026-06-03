@@ -1,3 +1,4 @@
+require("dotenv").config();
 const { ServiceBroker } = require("moleculer");
 const brokerConfig = require("./moleculer.config");
 

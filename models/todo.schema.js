@@ -1,22 +1,25 @@
-const todo = {
-    taskName: {
-        type: "string",
-        min: "1",
-        max: "500"
-    },
-    done: {
-        type: "boolean",
-        optional: "true",
-        default: "false"
-    },
-    createdAt: {
-        type: "date",
-        optional: true,
-    },
-    updatedAt: {
-        type: "date",
-        optional: true,
-    }
-}
+const todoSchema = {
+  taskName: {
+    type: "string",
+    min:  1,          // number not string
+    max:  500         // number not string
+  },
+  userId: {
+    type: "string",
+  },
+  done: {
+    type:     "boolean",
+    optional: true,   // boolean not string
+    default:  false   // boolean not string
+  },
+  createdAt: {
+    type:     "date",
+    optional: true,
+  },
+  updatedAt: {
+    type:     "date",
+    optional: true,
+  }
+};
 
-module.exports = { todo }
+module.exports = todoSchema;

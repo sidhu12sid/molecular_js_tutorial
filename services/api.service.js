@@ -11,12 +11,14 @@ module.exports = {
       {
         path: "/api",
         aliases: {
-          "GET    /todos":       "todos.list",
-          "GET    /todos/:id":   "todos.get",
-          "POST   /todos":       "todos.create",
-          "PUT    /todos/:id":   "todos.update",
-          "DELETE /todos/:id":   "todos.remove",
-          "PATCH  /todos/:id/toggle": "todos.toggleDone",
+            "POST   /todos":       "todos.create",
+            // "PUT    /todos/:id":   "todos.update",
+        //   "GET    /todos":       "todos.list",
+        //   "GET    /todos/:id":   "todos.get",
+        
+        //   
+        //   "DELETE /todos/:id":   "todos.remove",
+        //   "PATCH  /todos/:id/toggle": "todos.toggleDone",
         },
         mappingPolicy: "restrict",
         bodyParsers: {
