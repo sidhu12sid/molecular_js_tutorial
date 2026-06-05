@@ -4,9 +4,7 @@ const brokerConfig = require("./moleculer.config");
 
 const broker = new ServiceBroker(brokerConfig);
 
-broker.loadService("./services/api.service");
-// broker.loadService("./services/user.service");
-broker.loadService('./services/todos.service');
+broker.loadServices("./services", "**/*.service.js");
 
 broker.start()
   .then(() => broker.logger.info("🚀 Broker started"))

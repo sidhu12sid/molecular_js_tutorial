@@ -1,16 +1,16 @@
 const todoSchema = {
   taskName: {
     type: "string",
-    min:  1,          // number not string
-    max:  500         // number not string
+    min:  1,
+    max:  500
   },
   userId: {
     type: "string",
   },
   done: {
     type:     "boolean",
-    optional: true,   // boolean not string
-    default:  false   // boolean not string
+    optional: true,
+    default:  false
   },
   createdAt: {
     type:     "date",
